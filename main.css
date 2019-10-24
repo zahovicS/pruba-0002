@@ -1,0 +1,393 @@
+.cont-menu{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    right: -40px;
+    top:-60px;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    transform: scale(.2);
+    z-index: 2147483647!important;
+    cursor:pointer;
+}
+
+.MenuAmburguesa:after,
+.MenuAmburguesa:before,
+.MenuAmburguesa{
+    
+    transition: .6s;
+    position: absolute;
+    width: 100%; 
+    content: '';  
+    background-color: gold;
+}
+
+.MenuAmburguesa{
+    
+    height: 15%;
+    
+}
+
+.MenuAmburguesa:before{
+    height: 100%;
+       top: 50px;
+}
+   .MenuAmburguesa:after{
+    height: 100%;
+       top: -50px;
+       
+}
+.cruz{
+    transition: .6s;
+    transform: rotateZ(45deg);
+    background-color: black;
+} 
+
+.cruz:before{
+    transition: .6s;
+    top:0px;
+    transform: rotateZ(90deg);
+    background-color: black;
+}
+.cruz:after{
+    transition: .6s;
+    top:0px;
+    transform: rotateZ(0deg);
+    background-color: black;  
+}
+.menu{
+    transition: .6s;
+    position: absolute;
+    width: 0vw;
+    height: 100vh;
+    opacity: 0;
+    background-color: rgba(0,0,0,0.8);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    z-index: 2;
+}
+.fondo{
+    transition: .6s;
+    opacity: 1;
+    width: 100vw;
+}
+.item-info
+{   
+    margin-left: 35%;
+    position: absolute;
+    font-family: 'All T';
+    /*border:1px solid red;*/
+    text-align: center;
+    width: 270px;
+}
+.item-text
+{
+    color:white;
+    font-size: 70px;
+}
+.btn-nav
+{
+    width: 70px;
+    /*border: 1px solid red;*/
+    margin-left: 20px;
+}
+.btn-item-nav
+{
+    width: 100%;
+    /*border: 1px solid yellow;*/
+    margin: 30px 0px;
+    /*opacity: 0.4;*/
+    display: none;
+    transition: .5s;
+}
+.btn-item-nav:hover
+{
+    transition: .5s;
+    transform: scale(1.5);
+}
+.btn-item-nav img
+{
+    width: 100%;
+}
+.home
+{
+    background-image: url(../images/empresarios.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cabezera
+{
+    transition: .6s;
+    background-color: rgba(255,255,255,0.45);
+}
+.cabezera-nav
+{
+    transition: .6s;
+    background-color: rgba(255,255,25,0.8);
+}
+.logo
+{
+    width: 280px;
+    height: 65px;
+}
+.logo-empresa
+{
+    width: 100%;
+    height: 100%;
+}
+.title-home
+{   
+    color: #fff;
+    font-size: 60px;
+    font-weight: normal;
+    line-height: normal;
+    display: inline-block;
+    position: relative;
+    padding: 8px 16px;
+    text-shadow: 0px 3px 2px rgba(0,0,0,0.8);
+    font-family: "modak",cursive;
+    z-index: 1;
+}
+.title-home:before
+{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 7px;
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    z-index: -1;
+    background-color: rgba(255,202,19,0.9);
+}
+.nosotros
+{
+    background-image: url(../images/about.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.t
+{
+    font-size: 20px;
+}
+.servicios
+{
+    background-image: url(../images/serv.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contactos
+{
+    background-image: url(../images/contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.txt-opt
+{
+    border-left: 8px solid gold;
+    color:white;
+    font-size: 17px;
+    margin-bottom: 5px;
+    padding-left: 20px;
+    margin-top: 5px;
+}
+#conta p
+{
+    margin-bottom:0;
+}
+#t-c
+{
+    border-bottom: 5px solid gold;
+}
+input[type="text"],input[type="tel"],input[type="email"]
+{
+    width:  100%;
+    background: rgba(255,255,255,0.45);
+}
+.caption
+{
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 0px 3px 2px rgba(0,0,0,0.8);
+}
+#social
+{
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+.c-so
+{
+    width: 100%;
+    flex-direction: column;
+}
+.error
+{
+    display: none;
+    margin-left: 40px;
+    color:red;
+    font-size: 18px;
+}
+@media(max-width:1204px)
+{
+    .c-so
+    {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+@media (max-width: 740px)
+{
+    .title-home
+    {
+        font-size: 35px;
+    }
+    .con
+    {
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+    }
+    .item-info
+    {
+        margin-left:27%;
+    }
+    .item-text
+    {
+        font-size: 40px;
+    }
+    #social
+    {
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+        margin-top: 5px;
+    }
+    .c-so
+    {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #social h5
+    {
+        margin-right: 2px;
+    }
+    #social div
+    {
+        margin-left: 7px;
+    }
+    #formulario
+    {
+        padding-bottom: 50px;
+    }
+}
+@media (max-width: 570px)
+{
+    .title-home
+    {
+        font-size: 30px;
+    }
+    .con
+    {
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+    }
+    .cont-menu
+    {
+        right: -70px;
+    }
+    .item-info
+    {
+        margin-left:27%;
+    }
+    .item-text
+    {
+        font-size: 30px;
+    }
+    #social
+    {
+        text-align: center;
+    }
+    #social h5
+    {
+        width: 100%;
+    }
+    #social div
+    {
+        margin-left: 2px;
+    }
+}
+@media (max-width: 380px)
+{
+    .title-home
+    {
+        font-size: 28px;
+    }
+    .logo
+    {  
+        width: 200px;
+        height: 50px;
+    }
+    .cont-menu
+    {
+        top: -65px;
+        transform: scale(0.15);
+    }
+    .item-info
+    {
+        margin-left:34%;
+    }
+    .item-text
+    {
+        font-size: 45px;
+    }
+    #social
+    {
+        text-align: center;
+    }
+    #social h5
+    {
+        width: 100%;
+    }
+    #social div
+    {
+        margin-left: 2px;
+    }
+}
+/*Super small*/
+@media (max-width: 325px)
+{
+    .title-home
+    {
+        font-size: 23px;
+    }
+    .item-text
+    {
+        font-size: 45px;
+    }
+    #social
+    {
+        text-align: center;
+    }
+    #social h5
+    {
+        width: 100%;
+    }
+    #social div
+    {
+        margin-left: 2px;
+    }
+}
+@font-face
+{
+    font-family: 'All T';
+    src: url(../fonts/All_T.woff);
+}
