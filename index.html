@@ -7,12 +7,29 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/fullpage.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
 </head>
+<div id="fullpage">
+    <div class="section" id="sec1">hola1</div>
+    <div class="section" id="sec2">hola2</div>
+    <div class="section" id="sec3">hola3</div>
+    <div class="section" id="sec4">hola4</div>
+    <div class="section" id="sec5">hola5</div>
+    <div class="section" id="sec6">hola6</div>
+</div>
 <body>
-<script src="script/fullpage.cards.limited.min.js"></script>
-<script src="script/fullpage.extensions.min.js"></script>
-<script src="script/fullpage.js"></script>
 <script src="script/jquery.3.4.1.js"></script>
+<script src="script/fullpage.js"></script>
+<script src="script/fullpage.extensions.min.js"></script>
+<script src="script/fullpage.cards.limited.min.js"></script>
+<script>
+    $(document).ready(function() {
+	$('#fullpage').fullpage({
+		//options here
+		autoScrolling:true,
+		scrollHorizontally: true,
+        cards:true
+	});
+});
+</script>
 </body>
 </html>
